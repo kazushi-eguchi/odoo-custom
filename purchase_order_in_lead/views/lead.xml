@@ -12,11 +12,24 @@
                                 <span class="o_stat_text">Purchase</span>
                             </div>
                         </button>
-
-
              </xpath>
+            <xpath expr="//page[@name='lead']" position="after">
+                <page string="Order" name="order_list">
+                      <field
+                                name="order_ids"
+                                readonly="True"
+                                attrs="{'invisible': ('order_ids', '=', False)}"
+                            />
+                  </page>
+                  <page string="Purchase" name="purchase_list">
+                      <field
+                                name="purchase_ids"
+                                readonly="True"
+                                attrs="{'invisible': ('purchase_ids', '=', False)}"
+                            />
+                  </page>
+            </xpath>
         </field>
         </record>
-
     </data>
 </odoo>

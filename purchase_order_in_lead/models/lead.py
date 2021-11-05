@@ -5,12 +5,17 @@ from odoo import models, fields, api
 
 class Purchase_Order_In_Lead(models.Model):
     _inherit = "crm.lead"
-    purchase_id = fields.One2many(
+    purchase_ids = fields.One2many(
         comodel_name="purchase.order",
         inverse_name="lead_id",
         string='purchase'
     )
     po_count = fields.Integer(string="PO Count", compute="_compute_po_count")
+    order_ids = fields.One2many(
+        comodel_name="sale.order",
+        inverse_name="lead_id",
+        string='lead'
+    )
 
     def _compute_po_count(self):
         for rec in self:
