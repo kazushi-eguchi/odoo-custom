@@ -1,0 +1,22 @@
+<odoo>
+    <data>
+        <record id="crm_project_view_form_inherit" model="ir.ui.view">
+        <field name="name">sale_timesheet.timesheet_plan</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="sale_timesheet.timesheet_plan" />
+        <field name="arch" type="xml">
+             <xpath expr="//div[hasclass('oe_button_box')]" position="inside">
+
+<!--                       <button name="myMethod"  string="My Element" action.compute="action_open_po" type="object" class="oe_highlight">-->
+
+<!--                            <div class="o_stat_info">-->
+<!--                                <field name="po_count" class="o_stat_value"/>-->
+<!--                                <span class="o_stat_text">Purchase</span>-->
+<!--                            </div>-->
+<!--                       </button>-->
+             </xpath>
+
+        </field>
+        </record>
+    </data>
+</odoo>
