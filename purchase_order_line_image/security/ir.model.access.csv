@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_item_image_purchase_user,item.image.purchase.image.user,model_item_purchase_image,purchase.group_purchase_user,1,1,1,1
