@@ -4,3 +4,5 @@ __pycache__/
 *.py[cod]
 *$py.class
 .idea/
+ye_dynamic_odoo/
+report_designer_73lines/
