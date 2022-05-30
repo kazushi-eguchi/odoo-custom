@@ -20,7 +20,7 @@ class PurchaseOrderLine(models.Model):
         )
         res["domain"] = [("purchase_line_ids", "in", self.id)]
         res["context"] = {
-            "default_name": self.name,
+            "default_name": "図" + str(self.order_id.image_count+1),
             "default_product_id": self.product_id.id if self.product_id else False,
             "default_purchase_line_ids": [(4, self.id)],
         }
