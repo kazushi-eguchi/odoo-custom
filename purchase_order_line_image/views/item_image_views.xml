@@ -29,11 +29,11 @@
         <field name="name">item.purchase_image.view.tree</field>
         <field name="model">item.purchase_image</field>
         <field name="arch" type="xml">
-            <tree string="Item Images">
+            <tree string="Item Images" editable="bottom">
                 <field name="sequence" widget="handle" />
                 <field name="name" />
                 <field name="product_id" />
-                <field name="image_128" widget="image" />
+                <field name="image_1920" widget="image"  height="30px"/>
             </tree>
         </field>
     </record>
